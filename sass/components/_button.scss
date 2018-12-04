@@ -28,6 +28,11 @@
         background-color: $lightGrey-1;
     }
     
+    &--green{
+        color: $white;
+        background-color: $primaryColor;
+    }
+    
     &--animated{
         animation-name: moveInBottom;
         animation-duration: 0.5s;
