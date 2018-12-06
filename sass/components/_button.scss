@@ -1,5 +1,6 @@
 /* Button Styling */
 .btn{
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -11,6 +12,10 @@
         border-radius: 10%;
         transition: all 0.25s;
         position: relative;
+
+        // change for button element
+        border: none;
+        cursor: pointer;
     }
     
     &:hover{
@@ -18,7 +23,9 @@
         box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
     }
     
-    &:active{
+    &:active,
+    &:focus{
+        outline: none;
         transform:translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
     }
