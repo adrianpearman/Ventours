@@ -5,9 +5,18 @@
     
     &:not(:last-child){
         margin-bottom: $verticalGutter;
-    }
 
+        @include respond(tab-port){
+            margin-bottom: $verticalGutterSmall
+        }
+    }
+    
     @include clearfix;
+
+    @include respond(tab-port){
+        max-width: 50rem;
+        padding: 0 2rem;
+    }
 
     // Selects all classes that begin with 'col-
     [class^='col-']{
@@ -16,6 +25,16 @@
     
         &:not(:last-child){
             margin-right: $horizontalGutter;
+
+            @include respond(tab-port){
+               margin-right: 0;
+               margin-bottom: $verticalGutterSmall;
+            }
+        }
+
+
+        @include respond(tab-port){
+           width: 100% !important
         }
     }
 
