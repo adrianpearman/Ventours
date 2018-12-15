@@ -29,16 +29,33 @@
         width: 33.33%;
         display: table-cell;
         vertical-align: middle;
+
+        @include respond(tab-port){
+            display: block;
+            width: 100%;
+            margin-top: 7rem;
+        }
     }
     &__right{
         width: 66.67%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port){
+            display: block;
+            width: 100%;
+        }
     }
     &__img{
         display: block;
         width: 100%;
+
+        @include respond(tab-port){
+            display: inline-block;
+            width: 49%;
+            margin: 0;
+        }
     }
     &__text{
         font-size: 1.5rem;
