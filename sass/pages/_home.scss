@@ -1,7 +1,7 @@
 .section-about{
     padding: 25rem 0;
     background-color: $lightGrey-1;
-    margin-top: -25vh;
+    margin-top: -15vh;
 
     @include respond(tab-port){
        padding: 30rem 0; 
